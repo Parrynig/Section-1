@@ -9,8 +9,18 @@
         h1{
             text-align: center;
             text-decoration: 4px underline dashed rebeccapurple ;
+            color: rgb(0, 96, 128);
+        }
+        .myclass{
+            background-color: aqua;
+            color: crimson;
+        }
+        #someid{
+            color: blue;
+            font-size: 50px;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -18,8 +28,12 @@
     <p style="font-size: 50px; color: #3fb61b;">Inline CSS is used to design individual element at once</p>
 
     <h1>Internal CSS is used to style multiple tags at once</h1>
-    <h1>Name selctors are used to select element by their tag name</h1>
+    <h1 class="myclass" > Name selctors are used to select element by their tag name</h1>
 
+    <h3 class="myclass">  Class selectors are used to select elements by their class name </h3>
 
+    <p id="someid">ID selector are used to select elements by thir id name</p>
+
+        <button class="btn ">Submit</button>
 </body>
 </html>

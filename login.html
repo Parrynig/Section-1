@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 2px solid red;
+            width: 30%;
+            padding: 50px;
+            box-sizing: border-box;
+            box-shadow: -2px 2px 5px 0px #00000084;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .card-title , .card-subtitle{
+            text-align: center;
+        }
+        .text-input, .mybtn{
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+        .mybtn{
+            padding: 5px 10px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3 class="card-title" >Welcome Back </h3>
+        <p class="card-subtile" >Continue your journey with Us </p>
+
+        <form >
+            <label>Email Address </label>
+            <input class="text-input" type="email">
+
+            <label>Password </label>
+            <input class="text-input" type="password">
+            <button class="mybtn">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
