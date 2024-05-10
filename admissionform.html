@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .stu-name{
+            border: 5px solid crimson;
+
+        }
+        #contact{
+            text-align: center;
+            background-color: aqua;
+            text-decoration: 4px underline dashed rebeccapurple ;
+            color: rgb(0, 96, 128);
+        }
+    </style>
 </head>
 <body>
+    <div>
     
     <form>
 
 
-        <label for="stu-name"></label>
-        <input id ="stu-name" type="text" placeholder="Student name" required>
+        <label for="stu-name">Student Name </label>
+        <input class ="stu-name" type="text" placeholder="Student name" required>
 
-        <label for="email">student email </label>
-        <input id="email" type="email" required>
+        <label for="email">Student Email </label>
+        <input id="email" type="email" placeholder="email" required>
 
         <label for="contact">Contact</label>
-        <input id="contact" type="number">
+        <input id="contact" type="number" placeholder="contact ">
 
         <label for="dob">Date of birth</label>
         <input type="date" name="" id="dob">
 
         <label for="address">Permanant Address</label>
-        <textarea  id="address" cols="20" rows="4"></textarea>
+        <textarea  id="address" placeholder="address" cols="20" rows="4"></textarea>
 
         <label for="gender">Gender</label>
         <input type="radio" name="gender">  Male
-        <input type="radio" name="gender"> Female
+        <input type="radio" name="Gender"> Female
 
         <input id="terms" type="checkbox">
         <label for="terms">I accept all terms</label>
@@ -36,6 +49,7 @@
         <button>Submit</button>
 
     </form>
+</div>
 
 
 </body>
