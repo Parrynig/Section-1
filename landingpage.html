@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <style>
+
+        :root{
+            --theme-color: rgb(134, 88, 5) ;
+        }
         *{
             font-family: Montserrat;
         }
@@ -17,7 +21,7 @@
             background-image: linear-gradient(0deg, rgba(98, 84, 84, 0.34),rgba(184, 38, 135, 0.192), rgba(69, 195, 233, 0.471)) , url("https://wallpapers.com/images/featured/forest-o8tny79q1njt8ahw.jpg");
                                 
             height: 50vh;
-            color: white;
+            color: rgb(5, 1, 1);
 
             display: flex;
             flex-direction: column;
@@ -26,6 +30,7 @@
         }
         header h1{
             margin: 0;
+            color: black;
         }
         body{
             margin: 0;
@@ -38,9 +43,9 @@
         }
         .hero-btn{
             background-color: aqua;
-            color: rgb(10, 2, 63);
+            color: rgb(2, 0, 15);
             padding: 10px 20px;
-            border: 3px dashed rgb(131, 4, 25);
+            border: 3px dashed rgb(16, 2, 5);
             margin-top: 10px;
             transition-duration: 0.3s;
             cursor: pointer;
@@ -50,21 +55,77 @@
             background-color: antiquewhite;
             color: rgb(0, 14, 0);
         }
+        .section{
+            border: 2px solid red;
+            padding: 50px 200px;
+        }
+        .card-group{
+            /* border: 2px solid blue; */
+            display: flex;
+            gap: 10px;
+        }
+        .card{
+            border: 2px solid rgb(242, 192, 93);
+            text-align: center;
+            padding: 50px ;
+            border-radius: 10px;
+            color: var(--theme-color);
+            transition-duration: 0.3s;
+        }
+        .card:hover{
+            color: white;
+            background-color: var(--theme-color);
+        }
+        .section-title{
+            text-align: center;
+            font-size: 40px;
+            color: var(--theme-color);
+        }
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         
             <h1 class="header-title">Title of the website</h1>
             
-            <p class="header-subtitle">subtitle of the website</p>
+            <p class="header-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deleniti officia nulla quibusdam velit voluptas vel voluptatem laudantium totam aliquam, cum harum voluptatibus veritatis vitae. Suscipit quo cum architecto ab!</p>
             <button class="hero-btn" >SUBMIT </button>
         
 
     </header>
     
     <main>
+
+        <section class="section feature-section">
+            <h1 class="section-title">Feature Section</h1>
+            <div class="card-group">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Mern Stack</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos tenetur temporibus adipisci placeat fugit quod eligendi, qui molestiae nobis numquam at, reprehenderit quisquam exercitationem? Repudiandae in beatae tempore eius!
+                    </p>
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Mern Stack</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos tenetur temporibus adipisci placeat fugit quod eligendi, qui molestiae nobis numquam at, reprehenderit quisquam exercitationem? Repudiandae in beatae tempore eius!
+                    </p>
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Mern Stack</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos tenetur temporibus adipisci placeat fugit quod eligendi, qui molestiae nobis numquam at, reprehenderit quisquam exercitationem? Repudiandae in beatae tempore eius!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
