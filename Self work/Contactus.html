@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <style>
-        *{
-          font-family: Montserrat ;
+        * {
+            font-family: Montserrat;
         }
-        .card{
+
+        .card {
             border: 2px solid rgb(5, 0, 2);
             width: 40%;
             padding: 20px;
             background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
         }
 
-        .Name, .mail, .phone, .remark,.btn {
+        .Name,
+        .mail,
+        .phone,
+        .remark {
             margin-bottom: 10px;
             display: block;
-            text-align:end;
+            text-align: end;
             color: rgb(1, 11, 6);
             background-color: rgba(250, 235, 215, 0.886);
+            box-sizing: border-box;
+            width: 100%;
 
         }
-        .title, .subtitle{
+
+        .remark {
+            resize: vertical;
+        }
+
+        .title,
+        .subtitle {
             text-align: center;
         }
 
-        body{
+        body {
             display: flex;
             justify-content: left;
             /* align-items: self-start; */
-            height: 70vh;
+            height: 100vh;
+            align-items: center;
+            justify-content: flex-start;
 
-
-
-            background-image: url("https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg?t=st=1715598238~exp=1715601838~hmac=0cd3830d12c0aede076ffbea9832b1c331dc6f4a62a06c3ac1a935469106ec3e&w=900") ;
+            background-image: url("https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg?t=st=1715598238~exp=1715601838~hmac=0cd3830d12c0aede076ffbea9832b1c331dc6f4a62a06c3ac1a935469106ec3e&w=900");
             background-size: cover;
         }
-
-
-
     </style>
 </head>
+
 <body>
     <div class="card">
         <h3 class="title">Contact Us</h3>
@@ -53,7 +66,7 @@
         <form action="">
             <label for="Name">Name</label>
             <input class="Name" type="text" placeholder="Full Name">
-<br>
+            <br>
             <label for="mail">Email </label>
             <input class="mail" type="email" placeholder="email address" required>
             <br>
@@ -62,7 +75,7 @@
             <br>
 
             <label for="remark">Remark if any</label>
-            <textarea class="remark" placeholder="remarks" cols="30" rows="05"></textarea>
+            <textarea class="remark" placeholder="remarks" cols="30" rows="5"></textarea>
 
             <button class="btn">SUBMIT</button>
 
@@ -72,4 +85,5 @@
     </div>
 
 </body>
+
 </html>
