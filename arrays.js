@@ -21,3 +21,18 @@ const price= '₹536.65/-';
 
 console.log(price.slice(1));
 console.log(price.slice(0,-2));
+
+//adding new elements
+
+movies.push('The Dark Knight');
+movies.unshift('The Godfather');
+console.log(movies);
+
+//removing elements
+movies.pop(); //removes last element 
+movies.shift(); //removes from starting
+console.log(movies);    
+
+//movies.splice(3,2);    // 3 is starting element and 2 elements will be removed..ie 3rd and 4th  remove 
+movies.splice(3,2, 'Batman','Superman'); //will add element starting from 3rd index
+console.log(movies);    
