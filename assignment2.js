@@ -20,11 +20,12 @@ const getAvg = function (m1,m2,m3) {
 
 let arr = [dhsfh, kdashf,jsadfh, jfh, hskd, hdfjd, ksdjfg, kjfwgh];
 
-const longarr = function (a ) {
-    for(let i= 0; i<a.lenght; i++){
-        
-    }
-    
+let ans= [];
+arr.forEach( (n) => {
+
+    arr.push(n);
+)})
+console.log(ans);
     
 
 
